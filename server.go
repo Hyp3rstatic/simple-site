@@ -23,7 +23,7 @@ func termCmd (cmd string) {
 
 func main(){
 
-	_, err := os.Stat("./cert")
+  _, err := os.Stat("./cert")
   if ! os.IsNotExist(err) {
     termCmd("rm -rf ./cert")
   }
